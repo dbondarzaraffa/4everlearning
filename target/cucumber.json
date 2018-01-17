@@ -1,0 +1,2034 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1036031,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with correct \u0027username\u0027 and \u0027password\u0027",
+        "description": "",
+        "id": "loginfeature;login-with-correct-\u0027username\u0027-and-\u0027password\u0027",
+        "after": [
+          {
+            "result": {
+              "duration": 224594,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 173793606,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to the \u0027Login\u0027 page",
+            "match": {
+              "location": "LoginStep.iGoToThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1900598,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the following for Login",
+            "match": {
+              "location": "LoginStep.iEnterTheFollowingForLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "DimTest",
+                  "xxrpHdTRorrK"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129805,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the \u0027Sign In\u0027 button",
+            "match": {
+              "location": "LoginStep.iClickTheButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95392,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see the \u0027Avatar\u0027 picture",
+            "match": {
+              "location": "LoginStep.iShouldSeeThePicture()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 251763,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with correct \u0027username\u0027 and incorrect \u0027password\u0027",
+        "description": "",
+        "id": "loginfeature;login-with-correct-\u0027username\u0027-and-incorrect-\u0027password\u0027",
+        "after": [
+          {
+            "result": {
+              "duration": 504733,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 428661,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I go to the \u0027Login\u0027 page",
+            "match": {
+              "location": "LoginStep.iGoToThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 228820,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter the following for Login",
+            "match": {
+              "location": "LoginStep.iEnterTheFollowingForLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "DimTest",
+                  "incorrectPassword"
+                ],
+                "line": 16
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 195614,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click the \u0027Sign In\u0027 button",
+            "match": {
+              "location": "LoginStep.iClickTheButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 287384,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see the \u0027Incorrect login or password\u0027 text on the top of the \u0027Login\u0027 form",
+            "match": {
+              "location": "LoginStep.iShouldSeeTheIncorrectLoginOrPasswordTextOnTheTopOfTheLoginForm()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 486621,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Login with correct \u0027password\u0027 and incorrect \u0027username\u0027",
+        "description": "",
+        "id": "loginfeature;login-with-correct-\u0027password\u0027-and-incorrect-\u0027username\u0027",
+        "after": [
+          {
+            "result": {
+              "duration": 3453437,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 409341,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I go to the \u0027Login\u0027 page",
+            "match": {
+              "location": "LoginStep.iGoToThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 232443,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter the following for Login",
+            "match": {
+              "location": "LoginStep.iEnterTheFollowingForLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "incorrectUsername",
+                  "xxrpHdTRorrK"
+                ],
+                "line": 24
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 184143,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click the \u0027Sign In\u0027 button",
+            "match": {
+              "location": "LoginStep.iClickTheButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191388,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I should see the \u0027Incorrect login or password\u0027 text on the top of the \u0027Login\u0027 form",
+            "match": {
+              "location": "LoginStep.iShouldSeeTheIncorrectLoginOrPasswordTextOnTheTopOfTheLoginForm()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 667745,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Login with incorrect \u0027username\u0027 and incorrect \u0027password\u0027",
+        "description": "",
+        "id": "loginfeature;login-with-incorrect-\u0027username\u0027-and-incorrect-\u0027password\u0027",
+        "after": [
+          {
+            "result": {
+              "duration": 1931992,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 473339,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I go to the \u0027Login\u0027 page",
+            "match": {
+              "location": "LoginStep.iGoToThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 293421,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter the following for Login",
+            "match": {
+              "location": "LoginStep.iEnterTheFollowingForLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 31
+              },
+              {
+                "cells": [
+                  "incorrectUsername",
+                  "incorrectPassword"
+                ],
+                "line": 32
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 607370,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click the \u0027Sign In\u0027 button",
+            "match": {
+              "location": "LoginStep.iClickTheButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8911316,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should see the \u0027Incorrect login or password\u0027 text on the top of the \u0027Login\u0027 form",
+            "match": {
+              "location": "LoginStep.iShouldSeeTheIncorrectLoginOrPasswordTextOnTheTopOfTheLoginForm()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1006448,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Click the \u0027Sign In\u0027 button with empty fields",
+        "description": "",
+        "id": "loginfeature;click-the-\u0027sign-in\u0027-button-with-empty-fields",
+        "after": [
+          {
+            "result": {
+              "duration": 1634345,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1193609,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I go to the \u0027Login\u0027 page",
+            "match": {
+              "location": "LoginStep.iGoToThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 417190,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I click the \u0027Sign In\u0027 button",
+            "match": {
+              "location": "LoginStep.iClickTheButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169050,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should see the \u0027The field is required\u0027 text on the top of both fields",
+            "match": {
+              "location": "LoginStep.iShouldSeeTheTheFieldIsRequiredTextOnTheTopOfBothFields()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "LoginFeature",
+    "description": "This feature deals with the login functionality of the application",
+    "id": "loginfeature",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#"
+          },
+          {
+            "line": 5,
+            "value": "#"
+          },
+          {
+            "line": 6,
+            "value": "#  Correct registration"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 1079501,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Correct registration with entering valid data to every field",
+        "description": "",
+        "id": "registrationfeature;correct-registration-with-entering-valid-data-to-every-field",
+        "after": [
+          {
+            "result": {
+              "duration": 298855,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3440758,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2465705,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter the randomly generated valid data to every field for registration",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataToEveryFieldForRegistration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 548806,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171464,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I see the message about email verification",
+            "match": {
+              "location": "RegistrationStep.iSeeTheMessageAboutEmailVerification()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 436510,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Correct registration without entering data to \u0027Name\u0027 field",
+        "description": "",
+        "id": "registrationfeature;correct-registration-without-entering-data-to-\u0027name\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 164823,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 564504,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3459474,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter the randomly generated valid data for registration without \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 245122,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185351,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I see the message about email verification",
+            "match": {
+              "location": "RegistrationStep.iSeeTheMessageAboutEmailVerification()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 20,
+            "value": "#"
+          },
+          {
+            "line": 21,
+            "value": "#"
+          },
+          {
+            "line": 22,
+            "value": "#    Incorrect registration with empty fields"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 438321,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Click the \u0027Register\u0027 button with empty fields",
+        "description": "",
+        "id": "registrationfeature;click-the-\u0027register\u0027-button-with-empty-fields",
+        "after": [
+          {
+            "result": {
+              "duration": 861548,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1774415,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 694914,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2096815,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I should see the \u0027The field is required\u0027 text on the top of \u0027username\u0027, \u0027subdomain\u0027, \u0027email\u0027 fields",
+            "match": {
+              "location": "RegistrationStep.iShouldSeeTheTheFieldIsRequiredTextOnTheTopOfUsernameSubdomainEmailFields()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 29,
+            "value": "#"
+          },
+          {
+            "line": 30,
+            "value": "#"
+          },
+          {
+            "line": 31,
+            "value": "#    Incorrect registration: The \"Name\" field"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 1014296,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Registration with only one character in the \u0027Name\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-only-one-character-in-the-\u0027name\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 244517,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 900187,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 272894,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I enter only one character to the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterOnlyOneCharacterToTheNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 634539,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "The error message about number of characters should be displayed over the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 524053,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I enter the randomly generated valid data for registration without \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109278,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 597106,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "The error message about number of characters should be displayed over the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheNameField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1647627,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Registration with incorrect characters in the \u0027Name\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-incorrect-characters-in-the-\u0027name\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 1045087,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5460898,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 213123,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I enter incorrect characters to the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterIncorrectCharactersToTheNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 629105,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "The error message about correct characters should be displayed over the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 358022,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I enter the randomly generated valid data for registration without \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134636,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 622463,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "The error message about correct characters should be displayed over the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheNameField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1414580,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "Registration with spaces in the \u0027Name\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-spaces-in-the-\u0027name\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 347155,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 786080,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 195011,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I enter spaces to the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterSpacesToTheNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174483,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "The error message about correct characters should be displayed over the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1482200,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I enter the randomly generated valid data for registration without \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutNameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3265672,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 836190,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "The error message about correct characters should be displayed over the \u0027Name\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheNameField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 57,
+            "value": "#"
+          },
+          {
+            "line": 58,
+            "value": "#"
+          },
+          {
+            "line": 59,
+            "value": "#    Incorrect registration: The \"Username\" field"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 5233889,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "Registration with only one character in the \u0027Username\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-only-one-character-in-the-\u0027username\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 73657,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 322402,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 657482,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I enter only one character to the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterOnlyOneCharacterToTheUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 648425,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "The error message about number of characters should be displayed over the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 539147,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I enter the randomly generated valid data for registration without \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87544,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 221575,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "The error message about number of characters should be displayed over the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheUsernameField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 634539,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 69,
+        "name": "Registration with incorrect characters in the \u0027Username\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-incorrect-characters-in-the-\u0027username\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 1179723,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1033616,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 457640,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I enter incorrect characters to the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterIncorrectCharactersToTheUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 537939,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "The error message about correct characters should be displayed over the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageCorrectCharactersShouldBeDisplayedOverTheUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 384587,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I enter the randomly generated valid data for registration without \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133428,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1624685,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "The error message about correct characters should be displayed over the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageCorrectCharactersShouldBeDisplayedOverTheUsernameField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 393644,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "Registration with spaces in the \u0027Username\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-spaces-in-the-\u0027username\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 135843,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 382776,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177502,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I enter username with SPACES to the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterUsernameWithSPACESToTheUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164823,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "The error message about correct characters should be displayed over the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageCorrectCharactersShouldBeDisplayedOverTheUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 383984,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "I enter the randomly generated valid data for registration without \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167842,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 237273,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "The error message about correct characters should be displayed over the \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageCorrectCharactersShouldBeDisplayedOverTheUsernameField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 85,
+            "value": "#"
+          },
+          {
+            "line": 86,
+            "value": "#"
+          },
+          {
+            "line": 87,
+            "value": "#    Incorrect registration: The \"Subdomain\" field"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 393039,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 89,
+        "name": "Registration with only one character in the \u0027Subdomain\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-only-one-character-in-the-\u0027subdomain\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 181728,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2408954,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 239084,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I enter only one character to the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterOnlyOneCharacterToTheSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 204067,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "The error message about number of characters should be displayed over the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 283761,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I enter the randomly generated valid data for registration without \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89959,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1066218,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "The error message about number of characters should be displayed over the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheSubdomainField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6903252,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 97,
+        "name": "Registration with incorrect characters in the \u0027Subdomain\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-incorrect-characters-in-the-\u0027subdomain\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 2098627,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 734761,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1048710,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I enter incorrect characters to the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterIncorrectCharactersToTheSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 434095,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "The error message about correct characters should be displayed over the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 562692,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "I enter the randomly generated valid data for registration without \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191991,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 257800,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "The error message about correct characters should be displayed over the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheSubdomainField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2524873,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 105,
+        "name": "Registration with spaces in the \u0027Subdomain\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-spaces-in-the-\u0027subdomain\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 606163,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3867004,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 969015,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I enter subdomain name with SPACES to the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterSubdomainNameWithSPACESToTheSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 433491,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "The error message about correct characters should be displayed over the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 246933,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I enter the randomly generated valid data for registration without \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 435302,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 301270,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "The error message about correct characters should be displayed over the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheSubdomainField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 113,
+            "value": "#"
+          },
+          {
+            "line": 114,
+            "value": "#"
+          },
+          {
+            "line": 115,
+            "value": "#    Incorrect registration: The \"Email\" field"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 1106670,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 117,
+        "name": "Registration with only one character in the \u0027Email\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-only-one-character-in-the-\u0027email\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 295836,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4167670,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3394269,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "I enter only one character to the \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterOnlyOneCharacterToTheEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200251,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "The error message about number of characters should be displayed over the \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1554046,
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "I enter the randomly generated valid data for registration without \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 255989,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 477564,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "The error message about number of characters should be displayed over the \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheEmailField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3419023,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 125,
+        "name": "Registration with incorrect characters in the \u0027Email\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-incorrect-characters-in-the-\u0027email\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 2633548,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 380965,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179917,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "I enter incorrect characters to the \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterIncorrectCharactersToTheEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 177501,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "The error message about correct characters should be displayed over the \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 220368,
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "I enter the randomly generated valid data for registration without \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201652,
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174483,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "The error message about correct characters should be displayed over the \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheEmailField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 501111,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 133,
+        "name": "Registration with spaces in the \u0027Email\u0027 field",
+        "description": "",
+        "id": "registrationfeature;registration-with-spaces-in-the-\u0027email\u0027-field",
+        "after": [
+          {
+            "result": {
+              "duration": 54941,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 636350,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "I go to the \u0027Registration\u0027 page",
+            "match": {
+              "location": "RegistrationStep.iGoToTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 242103,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "I enter email with SPACES to the \u0027Email\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterEmailWithSPACESToTheEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 327231,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "The error message about correct characters should be displayed over the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheSubdomainField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 271082,
+              "status": "passed"
+            },
+            "line": 137,
+            "name": "I enter the randomly generated valid data for registration without \u0027Username\u0027 field",
+            "match": {
+              "location": "RegistrationStep.iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77884,
+              "status": "passed"
+            },
+            "line": 138,
+            "name": "I click the \u0027Register\u0027 button",
+            "match": {
+              "location": "RegistrationStep.iClickTheRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67016,
+              "status": "passed"
+            },
+            "line": 139,
+            "name": "The error message about correct characters should be displayed over the \u0027Subdomain\u0027 field",
+            "match": {
+              "location": "RegistrationStep.theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheSubdomainField()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "RegistrationFeature",
+    "description": "This feature deals with the registration functionality of the application",
+    "id": "registrationfeature",
+    "keyword": "Feature",
+    "uri": "Registration.feature"
+  }
+]

@@ -15,7 +15,6 @@ public class RandomGenerator{
                 sb.append(contain.charAt(rnd.nextInt(contain.length())));
             }
             String randomString = sb.toString();
-//            System.out.println(randomSting);
             return randomString;
 
         }
