@@ -1,9 +1,0 @@
-pages\LoginPage.class
-steps\LoginStep.class
-steps\LoginStep$User.class
-pages\RegistrationPage.class
-steps\RegistrationStep.class
-steps\Hook.class
-base\BaseUtil.class
-base\RandomGenerator.class
-runner\TestRunner.class

@@ -6,6 +6,9 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import pages.RegistrationPage;
 
 public class RegistrationStep extends BaseUtil{
 
@@ -18,6 +21,7 @@ public class RegistrationStep extends BaseUtil{
 
     @Given("^I go to the 'Registration' page$")
     public void iGoToTheRegistrationPage() throws Throwable {
+        base.Driver.navigate().to("http://app.4everlearning.local.zaraffasoft.com/auth/registration/");
         System.out.println("I go to the 'Registration' page.");
 
 
@@ -25,48 +29,92 @@ public class RegistrationStep extends BaseUtil{
 
     @And("^I enter the randomly generated valid data to every field for registration$")
     public void iEnterTheRandomlyGeneratedValidDataToEveryFieldForRegistration() throws Throwable {
+        RegistrationPage registrationPage = new RegistrationPage(base.Driver);
 
         RandomGenerator random = new RandomGenerator();
-        String user = random.randomString();
+        String user = random.randomString(10);
 
         String name = user;
         String username = "AT" + user;
         String subdomain = user;
         String email = "zaraftest+" + user + "@gmail.com";
 
+        registrationPage.nameField.sendKeys(name);
+        registrationPage.userNameField.sendKeys(username);
+        registrationPage.subdomainField.sendKeys(subdomain);
+        registrationPage.emailField.sendKeys(email);
+
         System.out.println("I enter the randomly generated valid data to every field for registration.");
         System.out.println("Name: " + name + " Username: " + username + " Subdomain: " + subdomain + " Email: " + email);
     }
 
+
+
+
     @And("^I click the 'Register' button$")
     public void iClickTheRegisterButton() throws Throwable {
+        RegistrationPage registrationPage = new RegistrationPage(base.Driver);
+
+        registrationPage.registerButton.click();
+
         System.out.println("I click the 'Register' button.");
     }
 
+
+
+
+
     @Then("^I see the message about email verification$")
     public void iSeeTheMessageAboutEmailVerification() throws Throwable {
+
+        Assert.assertEquals("Its not displayed!!!", base.Driver.findElement(By.cssSelector(".whiteBox__text")).isDisplayed(),true);
+        Assert.assertEquals("We have sent you a confirmation letter.",base.Driver.findElement(By.cssSelector(".whiteBox__text")).getText());
+        Assert.assertEquals("http://app.4everlearning.local.zaraffasoft.com/auth/verification/sent",base.Driver.getCurrentUrl());
+
         System.out.println("I see the message about email verification.");
     }
 
+
+
+
     @And("^I enter the randomly generated valid data for registration without 'Name' field$")
     public void iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutNameField() throws Throwable {
+        RegistrationPage registrationPage = new RegistrationPage(base.Driver);
 
         RandomGenerator random = new RandomGenerator();
-        String user = random.randomString();
+        String user = random.randomString(10);
 
         String username = "AT" + user;
         String subdomain = user;
         String email = "zaraftest+" + user + "@gmail.com";
 
+        registrationPage.userNameField.sendKeys(username);
+        registrationPage.subdomainField.sendKeys(subdomain);
+        registrationPage.emailField.sendKeys(email);
+
         System.out.println("I enter the randomly generated valid data for registration without 'Name' field.");
         System.out.println("Username: " + username + " Subdomain: " + subdomain + " Email: " + email);
-
     }
+
+
+
 
     @Then("^I should see the 'The field is required' text on the top of 'username', 'subdomain', 'email' fields$")
     public void iShouldSeeTheTheFieldIsRequiredTextOnTheTopOfUsernameSubdomainEmailFields() throws Throwable {
+
+        Assert.assertEquals("Its not displayed!!!", base.Driver.findElement(By.cssSelector("[name='username'] + .control-label + .input-container__error")).isDisplayed(),true);
+        Assert.assertEquals("The field is required",base.Driver.findElement(By.cssSelector("[name='username'] + .control-label + .input-container__error")).getText());
+
+        Assert.assertEquals("Its not displayed!!!", base.Driver.findElement(By.cssSelector("[name='subdomain'] + .control-label + .input-container__error")).isDisplayed(),true);
+        Assert.assertEquals("The field is required",base.Driver.findElement(By.cssSelector("[name='subdomain'] + .control-label + .input-container__error")).getText());
+
+        Assert.assertEquals("Its not displayed!!!", base.Driver.findElement(By.cssSelector("[name='email'] + .control-label + .input-container__error")).isDisplayed(),true);
+        Assert.assertEquals("The field is required",base.Driver.findElement(By.cssSelector("[name='email'] + .control-label + .input-container__error")).getText());
+
         System.out.println("I should see the 'The field is required' text on the top of 'username', 'subdomain', 'email' fields.");
     }
+
+
 
 
     @And("^I enter incorrect characters to the 'Name' field and the error message is displayed$")
@@ -76,28 +124,60 @@ public class RegistrationStep extends BaseUtil{
 
     @And("^I enter only one character to the 'Name' field$")
     public void iEnterOnlyOneCharacterToTheNameField() throws Throwable {
+        RegistrationPage registrationPage = new RegistrationPage(base.Driver);
+        registrationPage.nameField.sendKeys("w");
+
         System.out.println("I enter only one character to the 'Name' field");
     }
 
     @And("^The error message about number of characters should be displayed over the 'Name' field$")
     public void theErrorMessageAboutNumberOfCharactersShouldBeDisplayedOverTheNameField() throws Throwable {
+        Assert.assertEquals("Its not displayed!!!", base.Driver.findElement(By.cssSelector("[name='name'] + .control-label + .input-container__error")).isDisplayed(),true);
+        Assert.assertEquals("Length should be from 2 to 100",base.Driver.findElement(By.cssSelector("[name='name'] + .control-label + .input-container__error")).getText());
+
         System.out.println("The error message 'Length should be from 2 to 100' should be displayed over the 'Name' field");
     }
 
+
+
+
     @And("^I enter incorrect characters to the 'Name' field$")
     public void iEnterIncorrectCharactersToTheNameField() throws Throwable {
+        RegistrationPage registrationPage = new RegistrationPage(base.Driver);
+        registrationPage.nameField.sendKeys("!@$%^&*(");
+
         System.out.println("I enter incorrect characters '6387#$%^&*' to the 'Name' field");
     }
 
-    @And("^The error message about correct characters should be displayed over the 'Name' field$")
+
+
+
+    @Then("^The error message about correct characters should be displayed over the 'Name' field$")
     public void theErrorMessageAboutCorrectCharactersShouldBeDisplayedOverTheNameField() throws Throwable {
+        Assert.assertEquals("Its not displayed!!!", base.Driver.findElement(By.cssSelector("[name='name'] + .control-label + .input-container__error")).isDisplayed(),true);
+        Assert.assertEquals("Use only: A-Z, a-z or “space” symbols",base.Driver.findElement(By.cssSelector("[name='name'] + .control-label + .input-container__error")).getText());
+
         System.out.println("The error message 'Use only: A-Z, a-z or “space” symbols' should be displayed over the 'Name' field");
     }
 
+
+
+
     @And("^I enter spaces to the 'Name' field$")
     public void iEnterSpacesToTheNameField() throws Throwable {
+        RegistrationPage registrationPage = new RegistrationPage(base.Driver);
+
+        RandomGenerator random = new RandomGenerator();
+        String user = random.randomString(5);
+
+        String name = user + "  " + user;
+        registrationPage.nameField.sendKeys(name);
+
         System.out.println("I enter SPACES to the 'Name' field");
     }
+
+
+
 
     @And("^I enter only one character to the 'Username' field$")
     public void iEnterOnlyOneCharacterToTheUsernameField() throws Throwable {
@@ -113,7 +193,7 @@ public class RegistrationStep extends BaseUtil{
     public void iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutUsernameField() throws Throwable {
 
         RandomGenerator random = new RandomGenerator();
-        String user = random.randomString();
+        String user = random.randomString(10);
 
         String name = user;
         String subdomain = user;
@@ -139,7 +219,7 @@ public class RegistrationStep extends BaseUtil{
     public void iEnterUsernameWithSPACESToTheUsernameField() throws Throwable {
 
         RandomGenerator random = new RandomGenerator();
-        String spaceAndUserName = " " + random.randomString();
+        String spaceAndUserName = random.randomString(5) + " " + random.randomString(5);
 
         System.out.println("I enter username with SPACES to the 'Username' field: '" + spaceAndUserName + "'");
     }
@@ -158,7 +238,7 @@ public class RegistrationStep extends BaseUtil{
     public void iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutSubdomainField() throws Throwable {
 
         RandomGenerator random = new RandomGenerator();
-        String user = random.randomString();
+        String user = random.randomString(10);
 
         String name = user;
         String username = "AT" + user;
@@ -203,7 +283,7 @@ public class RegistrationStep extends BaseUtil{
     @And("^I enter the randomly generated valid data for registration without 'Email' field$")
     public void iEnterTheRandomlyGeneratedValidDataForRegistrationWithoutEmailField() throws Throwable {
         RandomGenerator random = new RandomGenerator();
-        String user = random.randomString();
+        String user = random.randomString(10);
 
         String name = user;
         String username = "AT" + user;
@@ -228,7 +308,7 @@ public class RegistrationStep extends BaseUtil{
     public void iEnterEmailWithSPACESToTheEmailField() throws Throwable {
 
         RandomGenerator random = new RandomGenerator();
-        String spaceEmail = " " + random.randomString();
+        String spaceEmail = "zaraftest " + random.randomString(10) + "@gmail.com";
 
         System.out.println("I enter email with SPACES to the 'Email' field '" + spaceEmail + "'");
     }

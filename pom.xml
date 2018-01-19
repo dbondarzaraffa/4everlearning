@@ -64,7 +64,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java &ndash;&gt;-->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -102,6 +102,20 @@
             <scope>test</scope>
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>com.codeborne</groupId>-->
+            <!--<artifactId>selenide</artifactId>-->
+            <!--<version>4.10</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+
     </dependencies>
+
+    <!--<properties>-->
+        <!--<projectNameVal>opp-selenide-cucumber</projectNameVal>-->
+        <!--<outputDirectoryVal>target/cucumber-html-reports</outputDirectoryVal>-->
+        <!--<cucumberOutputVal>target/cucumber.json</cucumberOutputVal>-->
+        <!--<parallelTestingVal>false</parallelTestingVal>-->
+    <!--</properties>-->
 
 </project>

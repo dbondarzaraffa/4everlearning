@@ -21,10 +21,10 @@ public class Hook extends BaseUtil {
         System.out.println("\n" + "!!START!! Opening the browser : Googole Chrome");
         System.setProperty("webdriver.chrome.driver",
                 "C:\\Automatization\\CucumberBasics\\driver\\chromedriver.exe");
-/*        base.Driver = new ChromeDriver();
+        base.Driver = new ChromeDriver();
         base.Driver.manage().window().maximize();
         WebDriverWait wait = new WebDriverWait(base.Driver, 30, 500);
-*/
+
     }
 
     @After
@@ -34,9 +34,9 @@ public class Hook extends BaseUtil {
             System.out.println(scenario.getName());
         }
         System.out.println("!!!END!!! Closing the browser : MOCK");
-/*
+
         base.Driver.quit();
-*/
+
     }
 
 

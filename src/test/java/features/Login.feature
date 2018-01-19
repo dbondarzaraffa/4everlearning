@@ -4,16 +4,16 @@ Feature: LoginFeature
   Scenario: Login with correct 'username' and 'password'
     Given I go to the 'Login' page
     And I enter the following for Login
-      | username | password     |
-      | DimTest  | xxrpHdTRorrK |
+      | username   | password     |
+      | zaraftesta | Q6dAGIa7Kj_6 |
     And I click the 'Sign In' button
     Then I should see the 'Avatar' picture
 
   Scenario: Login with correct 'username' and incorrect 'password'
     Given I go to the 'Login' page
     And I enter the following for Login
-      | username | password          |
-      | DimTest  | incorrectPassword |
+      | username   | password          |
+      | zaraftesta | incorrectPassword |
     And I click the 'Sign In' button
     Then I should see the 'Incorrect login or password' text on the top of the 'Login' form
 
@@ -21,9 +21,17 @@ Feature: LoginFeature
     Given I go to the 'Login' page
     And I enter the following for Login
       | username          | password     |
-      | incorrectUsername | xxrpHdTRorrK |
+      | incorrectUsername | Q6dAGIa7Kj_6 |
     And I click the 'Sign In' button
     Then I should see the 'Incorrect login or password' text on the top of the 'Login' form
+
+  Scenario: Login with correct 'password' and the SPACE in the 'username' field
+    Given I go to the 'Login' page
+    And I enter the correct password and user name with SPACE
+      | username   | password      |
+      | zaraftesta | Q6dAGIa 7Kj_6 |
+    And I click the 'Sign In' button
+    Then I should see the 'Whitespaces are inadmissible' text over the 'Password' field
 
   Scenario: Login with incorrect 'username' and incorrect 'password'
     Given I go to the 'Login' page

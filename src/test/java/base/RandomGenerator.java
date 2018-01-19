@@ -6,12 +6,12 @@ import java.util.Random;
 public class RandomGenerator{
 
 
-        public String randomString() {
+        public String randomString(int count) {
 
             String contain = "abcdefghijklmnopqrstuvwxyz";
             Random rnd = new Random();
-            StringBuilder sb = new StringBuilder(10);
-            for (int i = 0; i<10; i++) {
+            StringBuilder sb = new StringBuilder(count);
+            for (int i = 0; i<count; i++) {
                 sb.append(contain.charAt(rnd.nextInt(contain.length())));
             }
             String randomString = sb.toString();
