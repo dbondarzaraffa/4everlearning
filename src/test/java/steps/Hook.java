@@ -9,7 +9,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -26,16 +31,16 @@ public class Hook extends BaseUtil {
     @Before
     public void InitializeTest() {
 
-            /*
-            * Chrome Driver
-            */
+        /*
+         * Chrome Driver
+         */
         System.out.println("\n" + "!!START!! Opening the browser : Googole Chrome");
         System.setProperty("webdriver.chrome.driver",
-                "C:\\Automatization\\CucumberBasics\\driver\\chromedriver.exe");
+                "C:\\Program Files\\driver\\chromedriver.exe");
         System.setProperty("chromeoptions.args", "disable-infobars");
         base.Driver = new ChromeDriver();
         base.Driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(base.Driver, 15, 500);
+        WebDriverWait wait = new WebDriverWait(base.Driver, 10, 500);
     }
 
 //    public void InitializeTest() {
@@ -45,16 +50,62 @@ public class Hook extends BaseUtil {
 //         */
 //        System.out.println("\n" + "!!START!! Opening the browser : Firefox");
 //        System.setProperty("webdriver.Firefoxdriver",
-//                "C:\\Users\\Dmitriy Bondar QA\\workspace\\geckodriver\\geckodriver.exe");
+//                "C:\\Program Files\\driver\\geckodriver.exe");
 //
 //        System.setProperty("webdriver.firefox.bin",
 //                "C:\\Program Files\\Mozilla Firefox 56\\firefox.exe");
 //
-//        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dmitriy Bondar QA\\workspace\\geckodriver\\geckodriver.exe");
+////        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dmitriy Bondar QA\\workspace\\geckodriver\\geckodriver.exe");
 //
 //        base.Driver = new FirefoxDriver();
 //        base.Driver.manage().window().maximize();
-//        WebDriverWait wait = new WebDriverWait(base.Driver, 15, 500);
+//        WebDriverWait wait = new WebDriverWait(base.Driver, 10, 500);
+//    }
+
+//    public void InitializeTest() {
+//
+//        /*
+//         * Internet Explorer Driver
+//         */
+//        System.out.println("\n" + "!!START!! Opening the browser : Internet Explorer");
+//        System.setProperty("webdriver.ie.driver",
+//                "C:\\Program Files\\driver\\IEDriverServer.exe");
+//
+//        DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+//        capabilities.setCapability(InternetExplorerDriver.NATIVE_EVENTS, false);
+//
+//        base.Driver = new InternetExplorerDriver(capabilities);
+//        base.Driver.manage().window().maximize();
+//        WebDriverWait wait = new WebDriverWait(base.Driver, 10, 500);
+//    }
+
+//    public void InitializeTest() {
+////
+////        /*
+////         * Microsoft Edge Driver
+////         */
+////        System.out.println("\n" + "!!START!! Opening the browser : Microsoft Edge");
+////        System.setProperty("webdriver.edge.driver",
+////                "C:\\Program Files\\driver\\MicrosoftWebDriver.exe");
+////
+////        base.Driver = new EdgeDriver();
+////        base.Driver.manage().window().maximize();
+////        WebDriverWait wait = new WebDriverWait(base.Driver, 10, 500);
+////    }
+
+//    public void InitializeTest() {
+//
+//        /*
+//         * Opera Driver NOT WORKING!!!
+//         */
+//        System.out.println("\n" + "!!START!! Opening the browser : Opera");
+//        System.setProperty("webdriver.opera.driver",
+//                "C:\\Program Files\\driver\\operadriver.exe");
+//
+//
+//        base.Driver = new OperaDriver();
+//        base.Driver.manage().window().maximize();
+//        WebDriverWait wait = new WebDriverWait(base.Driver, 10, 500);
 //    }
 
 
